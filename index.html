@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/pipboy.app.css" />
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-lg navbar-light pip-tabs">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a href="index.html" class="nav-link active" aria-current="page">STAT</a>
+            </li>
+            <li class="nav-item">
+              <a href="inv.html" class="nav-link">INV</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">DATA</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">MAP</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">RADIO</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <ul class="nav nav-tabs pip-content-tab">
+            <li class="nav-item" role="presentation">
+              <button class="nav-link active" id="status-tab" data-bs-toggle="tab"
+              data-bs-target="#status" type="button" role="tab" aria-controls="home"
+              aria-selected="true">
+                STATUS
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="special-tab" data-bs-toggle="tab"
+              data-bs-target="#special" type="button" role="tab" aria-controls="home"
+              aria-selected="false">
+                SPECIAL
+              </button>
+            </li>
+            <li class="nav-item">
+              <button class="nav-link" id="perks-tab" data-bs-toggle="tab"
+              data-bs-target="#perks" type="button" role="tab" aria-controls="home"
+              aria-selected="false">
+                PERKS
+              </button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="tab-content">
+
+      <div class="tab-pane active" id="status" role="tabpanel"
+      aria-labelledby="status-tab">
+        <div class="center-image">
+          <img src="vaultboy.png" />
+        </div>
+
+        <div class="stat-bars">
+          <div class="row">
+            <div class="col-12">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w30"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w10"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+            </div>
+            <div class="col-3">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w90"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-3">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w100"></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+            </div>
+            <div class="col-3">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-12">
+              <div class="stat-bar">
+                <div class="level-progress">
+                  <div class="level-progress-indicator w50"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row stat-numbers">
+          <div class="spacer-numbers"></div>
+          <div class="col-2">
+            <img src="Pistol-icon.png" id="pistol-icon" />
+          </div>
+          <div class="col-1 crosshair-div">
+            <div class="icon">
+              <img src="Crosshair-icon.png" id="crosshair-icon" />
+            </div>
+            <div class="points crosshair-points">18</div>
+          </div>
+
+          <div class="col-1 transparent"></div>
+
+          <div class="col-2">
+            <img src="Helmet-icon.png" id="helmet-icon" />
+          </div>
+          <div class="col-1 bootstrap-icon-div">
+            <div class="icon bootstrap-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+                <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
+              </svg>
+            </div>
+            <div class="points">18</div>
+          </div>
+          <div class="col-1 bootstrap-icon-div">
+            <div class="icon bootstrap-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-radioactive" viewBox="0 0 16 16">
+                <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1ZM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Z"/>
+                <path d="M9.653 5.496A2.986 2.986 0 0 0 8 5c-.61 0-1.179.183-1.653.496L4.694 2.992A5.972 5.972 0 0 1 8 2c1.222 0 2.358.365 3.306.992L9.653 5.496Zm1.342 2.324a2.986 2.986 0 0 1-.884 2.312 3.01 3.01 0 0 1-.769.552l1.342 2.683c.57-.286 1.09-.66 1.538-1.103a5.986 5.986 0 0 0 1.767-4.624l-2.994.18Zm-5.679 5.548 1.342-2.684A3 3 0 0 1 5.005 7.82l-2.994-.18a6 6 0 0 0 3.306 5.728ZM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"/>
+              </svg>
+            </div>
+            <div class="points">18</div>
+          </div>
+
+
+          <div class"col-2 transparent"></div>
+        </div>
+
+      </div>
+
+      <div class="tab-pane" id="special" role="tabpanel"
+      aria-labelledby="special-tab">
+        SPECIAL
+      </div>
+
+      <div class="tab-pane" id="perks" role="tabpanel"
+      aria-labelledby="perks-tab">
+        PERKS
+      </div>
+
+    </div>
+
+
+
+    <div class="container pip-footer">
+      <div class="row">
+
+        <div class="col-3">
+          HP 90/90
+        </div>
+
+        <div class="col-6">
+          <span>LEVEL 1</span>
+          <div class="level-progress">
+            <div class="level-progress-indicator"></div>
+          </div>
+        </div>
+
+        <div class="col-3 text-right">
+          AP 50/50
+        </div>
+
+      </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/pipboy.app.js"></script>
+
+  </body>
+
+</html>
